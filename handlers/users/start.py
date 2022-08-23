@@ -3,7 +3,6 @@ from loader import dp
 from keyboards.inline import ikb_menu_ok
 
 @dp.message_handler(text='/start')
-
 async def command_start(message: types.Message):
     await message.answer(f'Привет {message.from_user.first_name}!\n'
                          f'                                                                      \n'
